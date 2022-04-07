@@ -13,7 +13,7 @@ func SumInts(m map[string]int32) int32 {
 	return sum
 }
 
-func SumFloat(m map[string]float32) float32 {
+func SumFloats(m map[string]float32) float32 {
 	var sum float32
 	sum = 0
 	for _, v := range m {
@@ -22,7 +22,7 @@ func SumFloat(m map[string]float32) float32 {
 	return sum
 }
 
-func SumNumber1[K comparable, V int32 | float32](m map[K]V) V {
+func SumNumber[K comparable, V int32 | float32](m map[K]V) V {
 	var sum V
 	for _, item := range m {
 		sum += item
@@ -53,10 +53,10 @@ func main() {
 		"first":  300.2,
 		"second": 400.2,
 	}
-	fmt.Println(SumFloat(fmap))
+	fmt.Println(SumFloats(fmap))
 
-	fmt.Println(SumNumber1(imap))
-	fmt.Println(SumNumber1(fmap))
+	fmt.Println(SumNumber(imap))
+	fmt.Println(SumNumber(fmap))
 
 	fmt.Println(SumNumber2(imap))
 	fmt.Println(SumNumber2(fmap))
