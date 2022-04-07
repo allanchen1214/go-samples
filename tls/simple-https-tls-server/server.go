@@ -5,6 +5,8 @@ import (
 	"net/http"
 )
 
+// FROM：https://github.com/denji/golang-tls
+
 func HelloServer(w http.ResponseWriter, req *http.Request) {
 	w.Header().Set("Content-Type", "text/plain")
 	w.Write([]byte("This is an example server.\n"))
