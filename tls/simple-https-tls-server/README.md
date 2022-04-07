@@ -14,3 +14,11 @@ openssl ecparam -genkey -name secp384r1 -out server.key
 ```shell
 openssl req -new -x509 -sha256 -key server.key -out server.crt -days 3650
 ```
+
+
+### Knowledge
+.crt — Alternate synonymous most common among *nix systems .pem (pubkey).
+.csr — Certficate Signing Requests (synonymous most common among *nix systems).
+.cer — Microsoft alternate form of .crt, you can use MS to convert .crt to .cer (DER encoded .cer, or base64[PEM] encoded .cer).
+.pem = The PEM extension is used for different types of X.509v3 files which contain ASCII (Base64) armored data prefixed with a «—– BEGIN …» line. These files may also bear the cer or the crt extension.
+.der — The DER extension is used for binary DER encoded certificates.
