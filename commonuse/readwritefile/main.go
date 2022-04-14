@@ -48,13 +48,13 @@ var (
 )
 
 func main() {
-	WriteFile(filename, "Hello, World!你好，世界。\n")
-	WriteFile(filename, "Hello, World!你好，世界。\n")
+	WriteFile(filename, "Hello,World!你好，世界。\n")
+	WriteFile(filename, "Hello,World!你好，世界。\n")
 	content, _ := ReadFile(filename)
 	fmt.Printf("file content: %s\n", content)
 
-	AppendFile(filename, "Hello, World!你好，世界。\n")
-	AppendFile(filename, "Hello, World!你好，世界。\n")
+	AppendFile(filename, "Hello,World!你好，世界。\n")
+	AppendFile(filename, "Hello,World!你好，世界。\n")
 	content, _ = ReadFile(filename)
 	fmt.Printf("file content: %s\n", content)
 }
