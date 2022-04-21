@@ -5,6 +5,7 @@ go 1.18
 require (
 	github.com/allanchen1214/bingo v0.0.0-20210529155654-71e849820d7a
 	github.com/gin-gonic/gin v1.7.7
+	github.com/google/wire v0.5.0
 	go.uber.org/zap v1.21.0
 )
 
