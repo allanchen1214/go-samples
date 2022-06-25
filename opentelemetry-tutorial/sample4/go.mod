@@ -1,4 +1,4 @@
-module opentelemetry-tutorial/sample2
+module opentelemetry-tutorial/sample4
 
 go 1.18
 
